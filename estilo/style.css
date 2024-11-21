@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -9,23 +14,35 @@
     --cor5: #063d1e;
 }
 
-    body {
-        background-color: var(--cor0);
-    }
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    text-align: center;
+    padding: 40px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header>h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
 
 .logo {
     display: flex;
     justify-content: center;
     padding: 10px;
-
 }
 
 .icones {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.icones > a {
+.icones>a {
     padding: 10px;
 }
